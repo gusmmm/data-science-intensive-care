@@ -1,1 +1,10 @@
-
+services:
+  rstudio:
+    image: gusmmm/rstudio-intensive-care:latest
+    ports:
+      - "8787:8787"
+    environment:
+      - PASSWORD=1234
+    volumes:
+      - ~/dsic/.rstudio_config:/home/rstudio/.config/rstudio
+      - ~/dsic/workspace:/home/rstudio/workspace
