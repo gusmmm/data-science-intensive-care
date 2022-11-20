@@ -19,3 +19,4 @@ Follow this instructions to:
 ## prepare your pc for version control with git
 ## do a backup of your local data
 ## run a docker container of Rstudio sever
+- download the file [[https://github.com/gusmmm/data-science-intensive-care/blob/main/docker-compose.yaml]] to the ~/dsic folder you've created
