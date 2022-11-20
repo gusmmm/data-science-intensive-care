@@ -19,12 +19,14 @@ Follow this instructions to:
 ## prepare your pc for version control with git
 ## do a backup of your local data
 ## run a docker container of Rstudio sever
-- download the [file](https://github.com/gusmmm/data-science-intensive-care/blob/main/docker-compose.yaml) to the ~/dsic folder you've created
-- $ docker-compose up -d
-- $ sudo docker run  -e PASSWORD=1234 -p 8787:8787 -v ~/dsic/.rstudio-config:/home/rstudio/.config/rstudio -v ~/dsic/workspace:/home/rstudio/workspace gusmmm/rstudio-intensive-care:latest
+- $ docker run  -e PASSWORD=1234 -p 8787:8787 -v ~/dsic/.rstudio-config:/home/rstudio/.config/rstudio -v ~/dsic/workspace:/home/rstudio/workspace gusmmm/rstudio-intensive-care:latest
 
 ## open rstudio server
 - in a browser go to the adress localhost:8787
 - fill in:
   - username rstudio
   - password 1234
+
+## quit rstudio sever
+- on the terminal
+  - press ctrl+c
