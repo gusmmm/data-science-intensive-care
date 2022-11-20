@@ -19,7 +19,7 @@ Follow this instructions to:
 ## prepare your pc for version control with git
 ## do a backup of your local data
 ## run a docker container of Rstudio sever
-- $ docker run  -e PASSWORD=1234 -p 8787:8787 -v ~/dsic/.rstudio-config:/home/rstudio/.config/rstudio -v ~/dsic/workspace:/home/rstudio/workspace gusmmm/rstudio-intensive-care:latest
+- $ docker run  -d -e PASSWORD=1234 -p 8787:8787 -v ~/dsic/.rstudio-config:/home/rstudio/.config/rstudio -v ~/dsic/workspace:/home/rstudio/workspace gusmmm/rstudio-intensive-care:latest
 
 ## open rstudio server
 - in a browser go to the address localhost:8787
@@ -27,6 +27,14 @@ Follow this instructions to:
   - username rstudio
   - password 1234
 
-## quit rstudio sever
-- on the terminal
-  - press ctrl+c
+## stop rstudio sever
+- $ docker ps
+  - check the CONTAINER ID
+  - use the first 2 symbols to identify the container
+- $ docker stop "first 2 digits of the CONTAINER ID"
+
+## restart rstudio server
+- $ docker ps
+  - check the CONTAINER ID
+  - use the first 2 symbols to identify the container
+- $ docker start "first 2 digits of the CONTAINER ID"
