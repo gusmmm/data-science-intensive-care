@@ -22,7 +22,7 @@ Follow this instructions to:
 - $ docker run  -e PASSWORD=1234 -p 8787:8787 -v ~/dsic/.rstudio-config:/home/rstudio/.config/rstudio -v ~/dsic/workspace:/home/rstudio/workspace gusmmm/rstudio-intensive-care:latest
 
 ## open rstudio server
-- in a browser go to the adress localhost:8787
+- in a browser go to the address localhost:8787
 - fill in:
   - username rstudio
   - password 1234
