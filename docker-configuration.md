@@ -28,6 +28,7 @@ Intructions to use the docker container with rstudio server ready for the course
   - fill in:
     - username rstudio
     - password 1234
+  - do all of you projects and write all of your files in the workspace directory!
 
 ## stop rstudio sever
 - when you are done using the rstudio container, you can stop it
