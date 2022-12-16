@@ -7,18 +7,6 @@ Intructions to use the docker container with rstudio server ready for the course
 - in the terminal run:
   - $ docker --version
 - you will get the version number if docker is installed and running
-
-## prepare your pc to do a local volume of your data
-- the local volume allows you to keep a permanent copy of your data in your machine
-- create a dedicated folder in you home directory
-  - I chose to call it dsic (data science critical care)
-    - in the terminal run:  
-      - $ mkdir dsic
-- inside the dedicated folder create 2 folders.
-  - in the terminal run:
-    - $ cd dsic
-    - $ mkdir .rstudio-config
-    - $ mkdir workspace
   
 ## prepare your pc for version control with git
 - not described yet
@@ -29,6 +17,10 @@ Intructions to use the docker container with rstudio server ready for the course
 - you only have to do this once, when installing the docker container
 - in the terminal run:
   - $ docker run  -d -e PASSWORD=1234 -p 8787:8787 -v ~/dsic/.rstudio-config:/home/rstudio/.config/rstudio -v ~/dsic/workspace:/home/rstudio/workspace --name rstudio-dsic gusmmm/rstudio-intensive-care:latest
+
+## assign permission to read and write files on local volume
+- in the terminal run:
+  - $ sudo chmod -R 777  ~/dsic
 
 ## open rstudio server
 - everytime you want to use the rstudio container open a browser
