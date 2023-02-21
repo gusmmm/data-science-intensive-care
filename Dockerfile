@@ -27,7 +27,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     lmodern \
     lbzip2
     
-RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.2.269/quarto-1.2.269-linux-amd64.deb -O /home/quarto.deb
+RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v1.3.213/quarto-1.3.213-linux-amd64.deb -O /home/quarto.deb
 RUN apt-get install --yes /home/quarto.deb
 RUN rm /home/quarto.deb
 RUN R -e "install.packages(c('devtools', 'tidyverse', 'janitor', \
