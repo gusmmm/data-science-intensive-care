@@ -17,7 +17,7 @@ Intructions on how to use a docker container with rstudio server ready for the c
 - you only have to do this once, when installing the docker container
 - this container is a Rstudio server ready for simple our simple data science project
 - in the terminal run:
-  $ docker run  -d -e PASSWORD=1234 -p 8787:8787 -v ~/dsic/.rstudio-config:/home/rstudio/.config/rstudio -v ~/dsic/workspace:/home/rstudio/workspace --name rstudio-dsic gusmmm/rstudio-intensive-care:20230410
+  $ docker run  -d -e PASSWORD=1234 -p 8787:8787 -v ~/dsic/.rstudio-config:/home/rstudio/.config/rstudio -v ~/dsic/workspace:/home/rstudio/workspace --name rstudio-dsic gusmmm/rstudio-intensive-care:20230316
 
 ## assign permission to read and write files on local volume
 - in the terminal run:
